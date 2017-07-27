@@ -1,0 +1,46 @@
+.header{
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…Igd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g);
+    background-size: 100%;
+    background-image: -moz-linear-gradient(314deg, #1d9be9 0%, #6659b0 98.82%, #1d9be9 100%, #000000 100%);
+    background-image: -webkit-linear-gradient(314deg, #1d9be9 0%, #6659b0 98.82%, #1d9be9 100%, #000000 100%);
+    background-image: linear-gradient(136deg, #1d9be9 0%, #6659b0 98.82%, #1d9be9 100%, #000000 100%);
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 140px;
+    background-size: 110% auto;
+    text-align: center;
+
+    min-height: 680px;
+}	
+.header:before {
+	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(img/header-bottom.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    z-index: 12;
+}
+
+.header:after {
+    -moz-transition: background-position 800ms ease, background-size 800ms ease, opacity 600ms ease;
+    -o-transition: background-position 800ms ease, background-size 800ms ease, opacity 600ms ease;
+    -webkit-transition: background-position 800ms ease, background-size 800ms ease, opacity 600ms ease;
+    transition: background-position 800ms ease, background-size 800ms ease, opacity 600ms ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .1;
+    background-image: url(img/home-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 11;
+}
