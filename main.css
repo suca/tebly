@@ -1,3 +1,4 @@
+
 .header{
 	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…Igd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g);
     background-size: 100%;
@@ -9,8 +10,7 @@
     padding-bottom: 140px;
     background-size: 110% auto;
     text-align: center;
-
-    min-height: 680px;
+    min-height: 600px;
 }	
 .header:before {
 	content: "";
@@ -43,4 +43,85 @@
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 11;
+}
+.header img {
+	max-width: 150px;
+}
+.subscriptions {
+	margin-top: 60px;
+}
+.header-body .subscriptions .enter-email,
+.header-body .subscriptions .subscribe{
+	margin-top: 20px;
+
+}
+.big-title,
+.small-title {
+	color: white;
+	font-size: 48px;
+	text-align: center;	
+}
+.big-title {
+	font-size: 48px;
+}
+.small-title {
+	font-size: 18px;
+}
+.body {
+	margin: 40px;
+}
+.body-title {
+	display: block;
+	height: 100px;
+	background-color: white;
+}
+.body .columns {
+	padding: 20px 0;
+}
+.body .title {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.enter-email,
+.subscribe {
+	display: inline-block;
+}
+.enter-email input{
+	width: 400px;
+    line-height: 48px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 22px;
+}
+.subscribe button{
+	background-color: #25cea0;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #25cea0;
+    color: white;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 520px) {
+	.big-title {	
+	    font-size: 32px;
+	}
+	.small-title {	
+	    font-size: 18px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.big-title {	
+	    font-size: 28px;
+	}
+	.small-title {	
+	    font-size: 16px;
+	}
+    .enter-email input {
+    	width: 300px;
+	}
 }
