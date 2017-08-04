@@ -5,16 +5,24 @@
         <title>Tebly</title>
 
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta https-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-        <meta name="msapplication-TileImage" content="img/tebly-icon.png" />
-<!--         <base href="/"> -->
-        <link rel="icon" href="img/tebly-icon.png" sizes="32x32" />
-        <link rel="icon" href="img/tebly-icon.png" sizes="192x192" />
-        <link rel="shortcut icon" type="image/png" href="img/tebly-icon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="msapplication-TileImage" content="img/tebly-icon-purple.png" />
+        <meta property="og:title" content="Tebly">
+        <meta property="og:url" content="http://tebly.net">
+        <meta property="og:image" content="http://tebly.net/img/tebly-logo-blue-large.png">
+
+        <meta name="Description" content="Tebly">
+        <meta name="Keywords" content="Tebly, Selfie, Picture, Bar, Restaurant, Get rewards">
+        <meta name="robots" content="index,follow">
+
+        <link rel="icon" href="img/tebly-icon-purple.png" sizes="32x32" />
+        <link rel="icon" href="img/tebly-icon-purple.png" sizes="192x192" />
+        <link rel="shortcut icon" type="image/png" href="img/tebly-icon-purple.png"/>
         <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-        <link rel="apple-touch-icon-precomposed" href="img/tebly-icon.png" />
+        <link rel="apple-touch-icon-precomposed" href="img/tebly-icon-purple.png" />
+
         <link rel="stylesheet" type="text/css" href="lib/normalize.css">
         <link rel="stylesheet" type="text/css" href="lib/bulma.css">
         <link rel="stylesheet" type="text/css" href="main.css">
@@ -28,80 +36,73 @@
                 <img src="img/tebly-logo-white-large.png" alt="">
               </div>
             </div>
-            <div class="header-body">
-                <div class="columns">
-                  <div class="column big-title is-offset-2 is-three-quarters">
-                    Get rewarded for taking photos at your favourite places
-                  </div>
-                </div>
-                <div class="columns subscriptions">
-                    <div class="column big-title is-offset-2 is-three-quarters">
-                        <div class="enter-email">
-                          <input type="" name="" placeholder="Enter your email">
-                          <label for=""></label>
-                        </div>
-                        <div class="subscribe">
-                            <button type="button" class=is-success>Subscribe</button>
-                        </div>
+        </header>
+        <div class="header-body">
+            <div class="columns is-centered">
+                <h1 class="column big-title">Get rewarded for taking photos at your favourite places</h1>
+            </div>
+            <div class="columns subscriptions is-centered">
+                <div class="column has-text-centered">
+                    <div class="enter-email">
+                        <input type="text" id="enterEmail" name="enter-email" placeholder="Enter your email">
+                        <label for="enterEmail"></label>
                     </div>
-                </div>
-                <div class="columns">
-                    <div class="column small-title">
-                        <span>Tebly launch coming soon, keep up to date</span>
-                      
+                    <div class="subscribe">
+                        <button type="button" class=is-success onclick="app.onSubscribe()">Subscribe</button>
                     </div>
                 </div>
             </div>
-        </header><!-- /header -->
-        <div class="body">
-            <div class="title has-text-centered">
-            Tebly rewards you the way you want
-        </div>
-        <div class="columns">
-            <div class="column is-half">
-                <h3 class="title">
-                    Take your docs anywhere
-                </h3>
-                Save files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all of your devices.
-            </div>
-            <div class="column is-half">
-                <img src="img/pic-1.png" alt="">
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column is-half">
-                <img src="img/pic-2.png" alt="">
-            </div>
-            <div class="column is-half">
-                <h3 class="title">
-                    Take your docs anywhere
-                </h3>
-                Save files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all of your devices.
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column is-half">
-                <h3 class="title">
-                    Take your docs anywhere
-                </h3>
-                Save files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all of your devices.
-            </div>
-            <div class="column is-half">
-                <img src="img/pic-3.png" alt="">
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column is-half">
-                <img src="img/pic-4.png" alt="">
-            </div>
-            <div class="column is-half">
-                <h3 class="title">
-                    Take your docs anywhere
-                </h3>
-                Save files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all of your devices.
-            </div>
-        </div>
-        </div>
-    </body>
+            <div class="columns">
+                <div class="column small-title">
+                    <span>Tebly launch coming soon, keep up to date</span>
 
+                </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <h2 class="subtitle has-text-centered">How <span class="tebly">Tebly</span> works?</h2>
+            <div class="columns">
+                <div class="column block-phase">
+                    <img src="img/tebly-snap.jpg" alt="">
+                    <h3 class="title">
+                        Take a Selfie
+                    </h3>
+                    <span class="text-explanation">
+                        Save files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all of your devices.
+                    </span>
+
+                </div>
+                <div class="column block-phase">
+                    <img src="img/tebly-send-icon.jpg" alt="">
+
+                    <h3 class="title">
+                        Share the picture
+                    </h3>
+                    <span class="text-explanation">
+                        Save files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all of your devices.
+                    </span>
+                </div>
+                <div class="column block-phase">
+                    <img src="img/tebly-reward-icon.png" alt="">
+                    <h3 class="title">
+                        Get rewarded
+                    </h3>
+                    <span class="text-explanation">
+                        Save files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all of your devices.
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="columns is-centered body-bottom">
+            <div class="column">
+                <h5>A new experience coming soon.</h5>
+            </div>
+        </div>
+        <footer class="columns is-centered">
+            <div class="column">
+                <span>&copy; 2017 tebly.net - All right reserved</span>
+            </div>
+        </footer>
+    </body>
 </html>

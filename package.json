@@ -1,0 +1,30 @@
+{
+  "name": "tebly",
+  "version": "1.0.0",
+  "description": "Get Rewarded ",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suca/tebly.git"
+  },
+  "keywords": [
+    "website",
+    "get",
+    "rewarded",
+    "picture",
+    "startup"
+  ],
+  "author": "Omar Sucapuca",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/suca/tebly/issues"
+  },
+  "homepage": "http://tebly.net",
+  "devDependencies": {
+    "webpack": "~3.0.0"
+  }
+}
