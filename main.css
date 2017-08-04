@@ -3,8 +3,7 @@ body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 .header{
-	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…Igd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g);
-    background-size: 100%;
+	background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…Igd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g");
     background-image: -moz-linear-gradient(314deg, #1d9be9 0%, #6659b0 98.82%, #1d9be9 100%, #000000 100%);
     background-image: -webkit-linear-gradient(314deg, #1d9be9 0%, #6659b0 98.82%, #1d9be9 100%, #000000 100%);
     background-image: linear-gradient(136deg, #1d9be9 0%, #6659b0 98.82%, #1d9be9 100%, #000000 100%);
@@ -41,10 +40,11 @@ body {
     bottom: 0;
     left: 0;
     opacity: .1;
-    background-image: url(img/selfie-friends-hero.jpg);
+    background: url("img/selfie-friends-hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
     z-index: 11;
 }
 .header img {
@@ -97,10 +97,10 @@ body {
 .body .columns {
 	padding: 20px 0;
 }
-.body .title{
+.body h3.title{
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
     text-align: center;
 }
 .body .subtitle {
@@ -168,7 +168,7 @@ body {
     font-weight: 300;
     color: #68717A;
     line-height: 36px;
-    text-align: left;
+    text-align: center;
 }
 .block-phase img {
     margin: auto;
@@ -196,6 +196,12 @@ footer.columns {
     }
 }
 @media (min-width: 420px) and (max-width: 520px) {
+    .header:after {
+        background: url("img/selfie-friends-m.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
     .body {
         margin: 50px 10px 50px 10px;
     }
@@ -224,6 +230,12 @@ footer.columns {
     }
 }
 @media screen and (max-width: 420px) {
+    .header:after {
+        background: url("img/selfie-friends-m.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
     .body {
         margin: 50px 10px 50px 10px;
     }
