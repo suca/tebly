@@ -2,6 +2,25 @@ html,
 body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #8a8a90;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #8a8a90;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #8a8a90;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #8a8a90;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #8a8a90;
+}
 .header{
 	background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…Igd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g");
     background-image: -moz-linear-gradient(314deg, #1d9be9 0%, #6659b0 98.82%, #1d9be9 100%, #000000 100%);
@@ -105,12 +124,18 @@ body {
 }
 .body .subtitle {
     padding-top: 30px;
-    padding-bottom: 100px;
+    padding-bottom: 100px;]
+}
+.body .subtitle h2{
     text-align: center;
     color: #363636;
     font-size: 40px;
     font-weight: 300;
     line-height: 1.125;
+    margin: 10px auto 30px auto;
+}
+.body .subtitle p {
+    color: #68717A;
 }
 .body-bottom {
     background-image: -webkit-linear-gradient(314deg, #1d9be9 0%, #6659b0 98.82%, #1d9be9 100%, #000000 100%);
@@ -139,7 +164,7 @@ body {
     padding: 5px 20px;
     font-size: 22px;
     text-align: center;
-    color: #33393F;
+    color: #8a8a90;
 }
 .subscribe button {
 	background-color: #25cea0;

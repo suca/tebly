@@ -8,28 +8,36 @@
         <meta https-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <meta name="msapplication-TileImage" content="img/tebly-icon-purple.png" />
+
+        <meta name=”application-name” content=”Tebly” />
+        <meta name=”msapplication-TileColor” content=”#587eca″ />
+        <meta name=”msapplication-TileImage” content=”img/tebly-icon-purple.png” />
+
         <meta property="og:title" content="Tebly - Selfie ">
         <meta property="og:url" content="http://tebly.net">
         <meta property="og:image" content="http://tebly.net/img/tebly-logo-blue-large.png">
-
         <meta name="Description" content="Tebly">
         <meta name="Keywords" content="Tebly, Selfie, Picture, Bar, Restaurant, Get rewards">
         <meta name="robots" content="index,follow">
+
+        <!--<link rel="manifest" href="manifest.json">-->
+        <!-- Add to home screen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Tebly">
+
 
         <link rel="icon" href="img/tebly-icon-purple.png" sizes="32x32" />
         <link rel="icon" href="img/tebly-icon-purple.png" sizes="192x192" />
         <link rel="shortcut icon" type="image/png" href="img/tebly-icon-purple.png"/>
         <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
         <link rel="apple-touch-icon-precomposed" href="img/tebly-icon-purple.png" />
+        <link rel="apple-touch-icon" href="img/tebly-icon-purple.png">
 
-        <link rel="stylesheet" type="text/css" href="lib/normalize.css">
-        <link rel="stylesheet" type="text/css" href="lib/bulma.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.4/css/bulma.min.css">
         <link rel="stylesheet" type="text/css" href="main.css">
-        <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
     </head>
     <body>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <header id="header" class="header">
             <div class="columns">
               <div class="column is-one-quarter">
@@ -39,7 +47,7 @@
         </header>
         <div class="header-body">
             <div class="columns is-centered">
-                <h1 class="column big-title">Get rewarded for taking photos at your favourite places</h1>
+                <h1 class="column big-title">Selfies that Pay</h1>
             </div>
             <div class="columns subscriptions is-centered">
                 <div class="column has-text-centered">
@@ -54,49 +62,56 @@
             </div>
             <div class="columns">
                 <div class="column small-title">
-                    <span>Tebly launch coming soon, keep up to date</span>
-
+                    <span>Launch coming soon, keep up to date</span>
                 </div>
             </div>
         </div>
 
         <div class="body">
-            <h2 class="subtitle has-text-centered">How <span class="tebly">Tebly</span> works?</h2>
+            <div class="columns subtitle">
+                <div class="column">
+                    <h2 class="has-text-centered">Discounts are only a snap away</h2>
+                    <p class="text-explanation has-text-centered">
+                        Receive discounts for taking selfies at your favourite bars and nightclubs.
+                    </p>
+                </div>
+            </div>
+
+
             <div class="columns">
                 <div class="column block-phase">
                     <img src="img/tebly-snap.jpg" alt="">
                     <h3 class="title">
-                        Take a Selfie
+                        Snap a selfie
                     </h3>
                     <p class="text-explanation">
-                        Save files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all of your devices.
+                        At a participating bar or nightclub take a photo of yourself or a group of friends. Tag everyone in the photo and include the location logo.
                     </p>
 
                 </div>
                 <div class="column block-phase">
                     <img src="img/tebly-send-icon.jpg" alt="">
-
                     <h3 class="title">
-                        Share the picture
+                        Share with friends
                     </h3>
                     <p class="text-explanation">
-                        Save files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all of your devices.
+                        Add a personal message and pick up to 5 friends to directly share the photo with on their Instagram or Facebook accounts.
                     </p>
                 </div>
                 <div class="column block-phase">
                     <img src="img/tebly-reward-icon.png" alt="">
                     <h3 class="title">
-                        Get rewarded
+                        Receive your discount
                     </h3>
                     <p class="text-explanation">
-                        Save files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all of your devices.
+                        Each friend will receive a message that contains a link to a time sensitive discount that can be redeemed at your selfie location.
                     </p>
                 </div>
             </div>
         </div>
         <div class="columns is-centered body-bottom">
             <div class="column">
-                <h5>A new experience coming soon.</h5>
+                <h5>Snap. Share. Receive with Tebly</h5>
             </div>
         </div>
         <footer class="columns is-centered">
@@ -104,5 +119,15 @@
                 <span>&copy; 2017 tebly.net - All right reserved</span>
             </div>
         </footer>
+        <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-104005506-1', 'auto');
+            ga('send', 'pageview');
+        </script>
     </body>
 </html>
